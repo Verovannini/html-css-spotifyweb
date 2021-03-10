@@ -19,25 +19,42 @@
             <nav>
                 <div class="nav-content">
                     <!-- Start Logo -->
-                    <div class="logo">
+                    <div class="logo margin-top-20 padd-left-20">
                         <img src="img/logo.svg" alt="Logo Spotify">
                     </div>
                     <!-- End Logo -->
 
                     <!-- Start Nav Menu -->
-                    <div class="nav-menu">
+                    <div class="nav-menu margin-top-20">
                         <ul class="menu nav-menu-list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Cerca</a></li>
-                            <li><a href="#">La tua libreria</a></li>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="img/home.svg" alt="Home Icon">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <img src="img/search.svg" alt="Search Icon">
+                                    <span>Cerca</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="img/libreria.svg" alt="libreria Icon">
+                                    <span>La tua libreria</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <!-- End Nav Menu -->
 
                     <!-- Start Playlist Container -->
-                    <div class="playlist-container">
+                    <div class="playlist-container margin-top-20 padd-left-20">
                         <h3>PLAYLIST</h3>
-                        <div><a href="#">Crea Playlist</a></div>
+                        <div class="add"><a href="#"><i class="fas fa-plus"></i>Crea Playlist</a></div>
                         <ul class="menu playlist-menu">
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
@@ -51,9 +68,17 @@
                     <!-- End Playlist Container -->
 
                     <!-- Start Profile -->
-                    <div class="profile">
-                        <div><a href="#">Installa app</a></div>
-                        <div>John Doe</div>
+                    <div class="account">
+                        <div class="install">
+                            <a href="#">
+                                <img src="img/download.svg" alt="Download Icon">
+                                <span>Installa app</span>
+                            </a>
+                        </div>
+                        <div class="profile">
+                            <img src="img/profile.svg" alt="Profile Icon">
+                            <span class="profile-name">John Doe</span>
+                        </div>
                     </div>
                     <!-- End Profile -->
                 </div>
