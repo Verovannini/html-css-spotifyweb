@@ -80,9 +80,6 @@ nav .nav-menu-list .active{
     padding-left: 18px;
 }
 nav .nav-menu-list .active a{
-    color: #d2d2d2;
-}
-nav .nav-menu-list .active a:hover{
     color: #fff;
 }
 
@@ -100,10 +97,11 @@ nav .playlist-container{
 nav .playlist-menu{
     height: 100%;
     overflow-y: auto;
+    padding-bottom: 65px;
 }
 
 nav .playlist-container h3{
-    font-size: 16px;
+    font-size: 15px;
 }
 nav .playlist-container .add i{
     height: 30px;
@@ -144,7 +142,7 @@ nav .account .profile img{
     vertical-align: middle;
 }
 nav .account .profile .profile-name{
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 5px;
 }
 
@@ -164,9 +162,48 @@ nav .account .profile .profile-name{
 footer{
     height: 70px;
     overflow: hidden;
+    background-color: #282828;
+    color: #fff;
+}
 
-    /* TEST */
-    background-color: aquamarine;
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* Footer Left */
+footer .footer-left{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-left .song-img img{
+    height: 40px;
+}
+
+footer .footer-left .song-name{
+    padding-left: 10px;
+}
+footer .footer-left .song-name .song{
+    font-size: 12px;
+}
+footer .footer-left .song-name .band a{
+    font-size: 10px;
+    color: #848484;
+}
+footer .footer-left .song-name .band a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .footer-left .song-icons i{
+    color: #848484;
+}
+footer .footer-left .song-icons i:hover{
+    color: #fff;
 }
 /* END FOOTER */
 
