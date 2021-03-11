@@ -70,6 +70,9 @@ nav .nav-menu-list li:not(.active){
     padding-left: 20px;
 }
 
+nav .nav-menu-list img{
+    height: 20px;
+}
 nav .nav-menu-list a img,
 nav .nav-menu-list a{
     vertical-align: middle;
@@ -81,10 +84,6 @@ nav .nav-menu-list .active{
 }
 nav .nav-menu-list .active a{
     color: #fff;
-}
-
-nav .nav-menu-list img{
-    height: 20px;
 }
 
 /* Nav Playlist Container */
@@ -180,10 +179,12 @@ footer .footer-left{
     align-items: center;
 }
 
+/* Footer left img */
 footer .footer-left .song-img img{
     height: 40px;
 }
 
+/* Footer left Song */
 footer .footer-left .song-name{
     padding-left: 10px;
 }
@@ -199,11 +200,73 @@ footer .footer-left .song-name .band a:hover{
     text-decoration: underline;
 }
 
+/* Footer left Icons */
+footer .footer-left .song-icons{
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+footer .footer-left .song-icons .folder-icon{
+    padding-left: 10px;
+}
+
 footer .footer-left .song-icons i{
     color: #848484;
 }
 footer .footer-left .song-icons i:hover{
     color: #fff;
+}
+
+/* Media query footer left */
+@media screen and (max-width: 991px) {
+    footer .footer-left .song-icons{
+        flex-direction: column;
+    }
+    footer .footer-left .song-icons .folder-icon{
+        padding-left: 0;
+    }
+}
+
+
+/* Footer Center */
+.footer-center{
+    width: 40%;
+    min-width: 20%;
+    text-align: center;
+}
+/* Footer Center Icons */
+.footer-center .play-icons-container i{
+    cursor: pointer;
+    vertical-align: middle;
+}
+.footer-center .play-icons-container .play{
+    font-size: 25px;
+    padding: 0 25px;
+}
+
+.footer-center .play-icons-container .arrow-left{
+    padding-left: 15px;
+}
+.footer-center .play-icons-container .arrow-right{
+    padding-right: 15px;
+}
+
+/* Footer Center Music Player */
+.footer-center .music-player{
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+}
+.footer-center .music-player .song-lenght{
+    width: 100%;
+    height: 4px;
+    background-color: #5a5a5a;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.footer-center .music-player .song-minutes{
+    font-size: 8px;
 }
 /* END FOOTER */
 
