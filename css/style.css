@@ -179,10 +179,8 @@ footer i{
 
 /* Barra del footer */
 footer .line{
-    width: 100%;
     height: 4px;
     background-color: #5a5a5a;
-    margin: 0 20px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -300,6 +298,10 @@ footer .footer-left .song-icons i:hover{
     align-items: baseline;
     margin-top: 10px;
 }
+.footer-center .music-player .line{
+    width: 100%;
+    margin: 0 20px;
+}
 
 .footer-center .music-player .song-minutes{
     font-size: 8px;
@@ -308,8 +310,21 @@ footer .footer-left .song-icons i:hover{
 
 
 /* Footer Right */
-.footer-right i{
+.footer-right{
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-right .volume-icons{
+   display: flex;
+}
+.footer-right .volume-icons i{
     padding-right: 15px;
+}
+
+.footer-right .line{
+    width: 90px;
 }
 /* END FOOTER */
 
