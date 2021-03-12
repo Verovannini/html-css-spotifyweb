@@ -34,6 +34,21 @@ a{
 .padd-left-20{
     padding-left: 20px;
 }
+
+/* Immagini Nav e Nav xs */
+nav .install img{
+    height: 15px;
+}
+
+nav .profile{
+    padding-top: 10px;
+}
+nav .profile img{
+    height: 20px;
+    width: 20px;
+    background-color: #808080;
+    border-radius: 50%;
+}
 /* END COMMON */
 
 /* MAIN */
@@ -128,27 +143,46 @@ nav .account{
     padding: 5px 20px;
 }
 
-nav .account .install img{
-    height: 15px;
+nav .account .install img,
+nav .account .profile img{
     vertical-align: middle;
 }
+
 nav .account .install{
     border-bottom: 1px solid #a3a3a3;
 }
 
-nav .account .profile{
-    padding-top: 10px;
-}
-nav .account .profile img{
-    height: 20px;
-    width: 20px;
-    background-color: #808080;
-    border-radius: 50%;
-    vertical-align: middle;
-}
 nav .account .profile .profile-name{
     font-size: 13px;
     padding-left: 5px;
+}
+
+/* Nav XS */
+.nav-xs{
+    float: left;
+    width: 50px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+    display: none;
+}
+
+.nav-xs .nav-xs-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav-xs .nav-xs-bottom,
+.nav-xs .nav-xs-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-xs .nav-xs-top img{
+    height: 25px;
+    margin-top: 10px;
 }
 
 /* Main Content */
@@ -482,4 +516,22 @@ footer .footer-left .song-icons i:hover{
 .upgrade .btn-upgrade:hover{
     transform: scale(1.1,1.1);
 }
-/* EndButton Upgrade */
+/* End Button Upgrade */
+
+
+/* Media query nav XS */
+@media screen and (max-width: 680px) {
+    nav{
+        display: none;
+    }
+    .nav-xs{
+        display: block;
+    }
+
+    .main-content{
+        width: calc( 100% - 50px );
+    }
+    .upgrade{
+        width: calc( 100% - 50px );
+    }
+}
