@@ -204,7 +204,8 @@ nav .account .profile .profile-name{
 }
 
 .main-content .row-container .album-container{
-    width: 170px;
+    width: calc( 100% / 6 );
+    max-width: 250px;
     padding-top: 20px;
     padding-right: 10px;
 }
@@ -243,12 +244,28 @@ nav .account .profile .profile-name{
     padding-top: 13px;
 }
 
-/* Media query Menu */
+/* Media query Main Content */
 @media screen and (max-width: 991px) {
+    /* Media query Menu */
     .main-content .main-menu{
         flex-wrap: wrap;
         align-content: space-between;
         height: 80px;
+    }
+
+    /* Media query Rows */
+    .main-content .albums-wrapper{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .main-content .row-container .album-container{
+        width: calc( 100% / 4 );
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content .row-container .album-container{
+        width: calc( 100% / 2 );
     }
 }
 /* END MAIN */
