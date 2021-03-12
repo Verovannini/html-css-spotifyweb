@@ -103,9 +103,6 @@ nav .nav-menu-list .active{
     border-left: 2px solid #adff2f;
     padding-left: 18px;
 }
-nav .nav-menu-list .active a{
-    color: #fff;
-}
 
 /* Nav Playlist Container */
 nav .playlist-container{
@@ -249,6 +246,7 @@ nav .account .profile .profile-name{
 
 .main-content .album-container .album-img{
     position: relative;
+    cursor: pointer;
 }
 .main-content .album-container img{
     width: 100%;
@@ -298,7 +296,6 @@ nav .account .profile .profile-name{
     /* Media query Rows */
     .main-content .albums-wrapper{
         flex-wrap: wrap;
-        justify-content: flex-start;
     }
     .main-content .row-container .album-container{
         width: calc( 100% / 4 );
