@@ -182,7 +182,7 @@ nav .account .profile .profile-name{
     color: #fff;
 }
 
-.main-content .main-menu li.active:after{
+.main-content .main-menu li.active::after{
     content: "";
     width: 30px;
     border-bottom: 2px solid #adff2f;
@@ -204,12 +204,35 @@ nav .account .profile .profile-name{
 }
 
 .main-content .row-container .album-container{
-    width: 150px;
+    width: 170px;
     padding-top: 20px;
     padding-right: 10px;
 }
-.main-content .row-container img{
+
+.main-content .album-container .album-img{
+    position: relative;
+}
+.main-content .album-container img{
     width: 100%;
+}
+.main-content .album-container .layover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.main-content .album-container .album-img:hover .layover{
+    display: block;
+}
+.main-content .album-container .layover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
 }
 
 .main-content .album-container .album-info{
