@@ -160,6 +160,7 @@ nav .account .profile .profile-name{
     background-color: #141922;
     color: #fff;
     padding-top: 63px;
+    padding-bottom: 50px;
 }
 
 /* Menu */
@@ -197,10 +198,12 @@ nav .account .profile .profile-name{
 .main-content .row-container{
     padding: 0 20px;
 }
+.main-content .row-container .row{
+    margin-top: 30px;
+}
 
 .main-content .albums-wrapper{
     display: flex;
-    justify-content: space-between;
 }
 
 .main-content .row-container .album-container{
@@ -242,6 +245,11 @@ nav .account .profile .profile-name{
 .main-content .album-container .album-info .album-name{
     font-size: 14px;
     padding-top: 13px;
+}
+
+.main-content .album-container .album-img.circle-img img,
+.main-content .album-container .album-img.circle-img .layover{
+    border-radius: 50%;
 }
 
 /* Media query Main Content */
